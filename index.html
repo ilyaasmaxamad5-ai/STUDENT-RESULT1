@@ -57,24 +57,24 @@ button { padding: 10px 18px; margin-top: 10px; border: none; border-radius: 6px;
 <script>
 // FIXED STUDENT ACCOUNTS + RESULTS
 const students = {
-  "0001": {pass: "0002", name: "Nasteexo Arab Ali", results: [[10,10,20,0],[10,10,20,50],[10,10,19,58],[9,9,17,59]]},
-  "0002": {pass: "0004", name: "Ashwaaq Bashiir Abdi", results: [[10,10,20,41],[8,7,18,52],[9,9,15,50],[8,8,16,55]]},
-  "0035": {pass: "0070", name: "Abdifaah Ali Dahir", results: [[10,10,20,38],[9,10,18,55],[8,8,17,52],[10,10,19,59]]},
-  "0004": {pass: "0008", name: "Hoodo Bashir Abdi", results: [[10,10,18.75,20],[8,8,17,54],[7,7,16,50],[9,9,18,58]]},
-  "0005": {pass: "0010", name: "Aswaan Bashir Abdi", results: [[10,10,20,46],[9,8,19,54],[10,10,20,60],[8,9,17,55]]},
-  "0024": {pass: "0048", name: "Abdiqadir Abshir Hasan", results: [[10,10,20,21],[7,8,18,52],[9,10,19,56],[8,8,18,54]]},
-  "0021": {pass: "0042", name: "Ahmed Abdirisaq Jama", results: [[10,10,18.75,53],[8,9,17,55],[10,9,20,58],[9,8,18,56]]},
-  "0041": {pass: "0082", name: "Jama Abdirisaq Jama", results: [[10,10,20,56],[8,8,17,52],[9,9,18,53],[7,8,16,51]]},
-  "0009": {pass: "0018", name: "Adna Qasim Abdilahi", results: [[10,10,20,22],[8,8,18,55],[7,7,17,50],[9,9,18,57]]},
-  "0042": {pass: "0084", name: "Muscab Jibril Hassan", results: [[10,10,18.75,36],[9,8,19,57],[10,10,20,60],[9,9,18,58]]},
-  "0038": {pass: "0076", name: "Mushtaaq Mohomed Ali", results: [[10,10,18.75,59],[8,7,17,52],[9,9,18,54],[8,8,17,53]]},
-  "0039": {pass: "0078", name: "Nimco Abdi Ali", results: [[10,10,20,31],[8,8,18,55],[7,7,17,51],[9,9,18,56]]},
-  "0025": {pass: "0050", name: "Radwan H.saleban ibrahim", results: [[10,10,20,54],[9,8,19,56],[10,10,20,60],[8,9,17,55]]},
-  "0036": {pass: "0072", name: "Sihaam Abdirashid Jibril", results: [[10,10,20,0],[8,8,18,54],[7,7,16,50],[9,9,18,58]]},
-  "0033": {pass: "0066", name: "Yasmin Elmi Abdi", results: [[10,10,20,0],[9,8,19,56],[10,10,20,60],[8,9,17,55]]},
-  "0031": {pass: "0062", name: "Muna Mohamad Farah", results: [[10,10,20,0],[8,9,18,55],[7,7,16,50],[9,9,18,58]]},
-  "0064": {pass: "0128", name: "Abdikarim Mustafe Abdi", results: [[10,10,18,0],[9,8,19,56],[10,10,20,60],[8,9,17,55]]},
-  "0045": {pass: "0090", name: "Hamse Idiris Aidid", results: [[10,10,0,0],[8,9,18,54],[10,10,20,60],[9,9,17,58]]}
+  "0001": {pass: "0002", name: "Nasteexo Arab Ali", results: [[0,0,0,0],[0,0,0,0],[10,10,20,0],[9,9,17,59]]},
+  "0002": {pass: "0004", name: "Ashwaaq Bashiir Abdi", results: [[10,10,20,41],[10,10,20,30],[10,10,20,32],[8,8,16,55]]},
+  "0035": {pass: "0070", name: "Abdifaah Ali Dahir", results: [[10,10,20,38],[10,10,20,37.5],[10,10,20,31],[10,10,19,59]]},
+  "0004": {pass: "0008", name: "Hoodo Bashir Abdi", results: [[10,10,18.75,20],[10,10,18.75,28],[10,10,20,13],[9,9,18,58]]},
+  "0005": {pass: "0010", name: "Aswaan Bashir Abdi", results: [[10,10,20,46],[10,10,17.5,33],[10,10,20,58],[8,9,17,55]]},
+  "0024": {pass: "0048", name: "Abdiqadir Abshir Hasan", results: [[10,10,20,21],[10,10,20,50],[10,10,20,58],[8,8,18,54]]},
+  "0021": {pass: "0042", name: "Ahmed Abdirisaq Jama", results: [[10,10,18.75,53],[10,10,20,45],[10,10,20,54],[9,8,18,56]]},
+  "0041": {pass: "0082", name: "Jama Abdirisaq Jama", results: [[10,10,20,56],[10,10,20,37.5],[10,10,20,48],[7,8,16,51]]},
+  "0009": {pass: "0018", name: "Adna Qasim Abdilahi", results: [[10,10,20,22],[10,10,16.25,39],[10,10,20,35],[9,9,18,57]]},
+  "0042": {pass: "0084", name: "Muscab Jibril Hassan", results: [[10,10,18.75,36],[10,10,20,36],[10,10,20,44],[9,9,18,58]]},
+  "0038": {pass: "0076", name: "Mushtaaq Mohomed Ali", results: [[10,10,18.75,59],[10,10,20,52],[10,10,20,60],[8,8,17,53]]},
+  "0039": {pass: "0078", name: "Nimco Abdi Ali", results: [[10,10,20,31],[10,10,15,55],[10,10,17,51],[9,9,18,56]]},
+  "0025": {pass: "0050", name: "Radwan H.saleban ibrahim", results: [[10,10,20,54],[10,10,20,48],[10,10,20,58],[8,9,17,55]]},
+  "0036": {pass: "0072", name: "Sihaam Abdirashid Jibril", results: [[10,10,20,0],[10,10,20,54],[7,7,16,50],[9,9,18,58]]},
+  "0033": {pass: "0066", name: "Yasmin Elmi Abdi", results: [[10,10,20,0],[10,10,20,43],[10,10,20,56],[8,9,17,55]]},
+  "0031": {pass: "0062", name: "Muna Mohamad Farah", results: [[10,10,20,0],[10,10,20,54],[10,10,20,54],[9,9,18,58]]},
+  "0064": {pass: "0128", name: "Abdikarim Mustafe Abdi", results: [[10,10,18,0],[10,10,20,28],[10,10,20,0],[8,9,17,55]]},
+  "0045": {pass: "0090", name: "Hamse Idiris Aidid", results: [[10,10,0,0],[10,10,0,0],[10,10,20,0],[9,9,17,58]]}
   
 };
 
