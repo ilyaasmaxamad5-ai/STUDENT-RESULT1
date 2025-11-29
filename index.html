@@ -6,7 +6,7 @@
 <style>
 body { font-family: Arial; background: #f4f4f4; padding: 20px; }
 .container { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 8px; }
-.login-box { width: 350px; margin: auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 5px #aaa; }
+.login-box { width: 450px; margin: auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 5px #aaa; }
 input { padding: 10px; margin-bottom: 15px; width: 100%; box-sizing: border-box; }
 input[readonly] { background: #eee; }
 button { padding: 10px 18px; margin-top: 10px; border: none; border-radius: 6px; cursor: pointer; }
@@ -24,7 +24,7 @@ button { padding: 10px 18px; margin-top: 10px; border: none; border-radius: 6px;
   <h2>NPUC Student Login</h2>
 
   <label>Student ID (Visible)</label>
-  <input id="sid" placeholder="id001, id002, id003, id004, id005">
+  <input id="sid" placeholder="001, 002, 003, 004, 005">
 
   <label>Password</label>
   <input id="pass" type="text" placeholder="Enter password">
@@ -39,9 +39,9 @@ button { padding: 10px 18px; margin-top: 10px; border: none; border-radius: 6px;
   <table class="table">
     <tr>
       <th>Course</th>
-      <th>Att 10</th>
-      <th>Class 10</th>
-      <th>Assign 20</th>
+      <th>Attendance 10</th>
+      <th>Class activity 10</th>
+      <th>assignments 20</th>
       <th>Final 60</th>
       <th>Total</th>
       <th>Grade</th>
@@ -57,7 +57,7 @@ button { padding: 10px 18px; margin-top: 10px; border: none; border-radius: 6px;
 <script>
 // FIXED STUDENT ACCOUNTS + RESULTS
 const students = {
-  "001": {pass: "1111", name: "Hamda nuur hassan", results: [[10,9,18,55],[10,10,20,50],[10,10,19,58],[9,9,17,59]]},
+  "001": {pass: "1111", name: "ahmed", results: [[10,9,18,55],[10,10,20,50],[10,10,19,58],[9,9,17,59]]},
   "002": {pass: "2222", name: "Ayaan Ali", results: [[7,8,16,48],[8,7,18,52],[9,9,15,50],[8,8,16,55]]},
   "003": {pass: "3333", name: "Hamza Abdi", results: [[10,9,20,60],[9,10,18,55],[8,8,17,52],[10,10,19,59]]},
   "004": {pass: "4444", name: "Khalid Hassan", results: [[9,9,19,57],[8,8,17,54],[7,7,16,50],[9,9,18,58]]},
