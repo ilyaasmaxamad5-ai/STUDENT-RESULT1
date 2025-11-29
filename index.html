@@ -13,7 +13,7 @@ button { padding: 10px 18px; margin-top: 10px; border: none; border-radius: 6px;
 .btn { background: teal; color: white; }
 .logout { background: red; color: white; }
 .table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-.table th, .table td { border: 1px solid #999; padding: 8px; text-align: center; }
+.table th, .table td { border: 1px solid #999; padding: 10px; text-align: center; }
 .gpa { margin-top: 15px; font-weight: bold; font-size: 18px; }
 </style>
 </head>
@@ -57,7 +57,7 @@ button { padding: 10px 18px; margin-top: 10px; border: none; border-radius: 6px;
 <script>
 // FIXED STUDENT ACCOUNTS + RESULTS
 const students = {
-  "0001": {pass: "0002", name: "Nasteexo Arab Ali", results: [[10,9,18,55],[10,10,20,50],[10,10,19,58],[9,9,17,59]]},
+  "0001": {pass: "0002", name: "Nasteexo Arab Ali", results: [[10,10,20,55],[10,10,20,50],[10,10,19,58],[9,9,17,59]]},
   "0002": {pass: "0004", name: "Ashwaaq Bashiir Abdi", results: [[7,8,16,48],[8,7,18,52],[9,9,15,50],[8,8,16,55]]},
   "0035": {pass: "0070", name: "Abdifaah Ali Dahir", results: [[10,9,20,60],[9,10,18,55],[8,8,17,52],[10,10,19,59]]},
   "0004": {pass: "0008", name: "Hoodo Bashir Abdi", results: [[9,9,19,57],[8,8,17,54],[7,7,16,50],[9,9,18,58]]},
@@ -136,7 +136,7 @@ function gradeMark(t) {
   if (t >= 80) return "B";
   if (t >= 70) return "C";
   if (t >= 60) return "D";
-  return "F";
+  return "F";  
 }
 
 // Convert grade to points
